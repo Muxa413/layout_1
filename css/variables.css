@@ -1,0 +1,85 @@
+.oswald-<uniquifier > {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+:root {
+
+  --color-1: #222831;
+  /*bg*/
+  --color-2: #393e46;
+  /*btn alt*/
+  --color-3: #00adb5;
+  /*span, btn*/
+  --color-4: #eee;
+  /*font-family*/
+
+  --font-family: "Poppins", sans-serif;
+  /*font-family*/
+  --second-family: "Oswald", sans-serif;
+  /*logo*/
+}
+
+body {
+  background: var(--color-1);
+  color: var(--color-4);
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  left: 40%;
+  background: yellow/*var(--color-2)*/;
+}
+
+button {
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-3);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
