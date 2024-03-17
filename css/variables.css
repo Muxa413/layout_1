@@ -1,4 +1,4 @@
-.oswald-<uniquifier > {
+.oswald {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -48,11 +48,16 @@ body::before {
   width: 1px;
   height: 100vh;
   left: 40%;
-  background: yellow/*var(--color-2)*/;
+  background: var(--color-2);
 }
 
 button {
   color: inherit;
+  border-radius: 24px;
+  border: none;
+  padding: 10px 32px;
+  width: max-content;
+  height: 47px;
 }
 
 ul {
@@ -64,12 +69,12 @@ li {
   list-style: none;
 }
 
-a {
+a, button {
   color: inherit;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, button:hover {
   color: var(--color-3);
   text-decoration: none;
 }
