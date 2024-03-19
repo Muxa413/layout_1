@@ -1,10 +1,10 @@
 
 .btn {
-  background: grey;
+  background: var(--color-2);
 }
 
-.btn_active {
-  background: blue;
+.btn_alt {
+  background: var(--color-3);
 }
 
 .navbar {
@@ -42,26 +42,27 @@
   font-size: 18px;
 }
 
-.banner {  
+.banner {
+  display: flex;
   height: 87vh;
 }
 
 .banner_info {
-  position: relative;  
+  position: relative;
   margin-top: 202px;
   padding-left: 180px;
   width: 586px;
 }
 
 .banner_info::before {
-position: absolute;
-content: "";
-background-image: url(../img/arrow_r.png);
-background-repeat: no-repeat;
-width: 100%;
-height: 100%;
-top: 50px;
-left: 90px;
+  position: absolute;
+  content: "";
+  background-image: url(../img/arrow_r.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 90px;
 }
 
 .banner_info h1 {
@@ -73,21 +74,32 @@ left: 90px;
 }
 
 .banner_button {
-  display: flex;  
-  column-gap: 10px;  
+  display: flex;
+  column-gap: 10px;
   transform: translateY(-60px);
 }
 
-.banner_button .btn { 
-  background: #000;
+.banner_img {
+  position: relative;
+  margin: auto auto;
+
+}
+
+.banner_img::before {
+  position: absolute;
+  content: "";
+  background: url(../img/sits.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  bottom: -150px;
 }
 
 .banner_arrow {
   position: absolute;
   content: "";
-  border-radius: 0;
+  border-radius: 20%;
   background-color: var(--color-2);
-  background-image: url(../icons/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   height: 96px;

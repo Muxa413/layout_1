@@ -71,12 +71,14 @@ li {
 
 a, button {
   color: inherit;
+  text-shadow: 0px 2px 3px var(--color-1);
   text-decoration: none;
+  box-shadow: 0px 0px 3px var(--color-1);
 }
 
 a:hover, button:hover {
-  color: var(--color-3);
   text-decoration: none;
+  filter: invert(80%);
 }
 
 h1,
